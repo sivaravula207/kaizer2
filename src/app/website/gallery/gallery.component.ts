@@ -19,9 +19,7 @@ imgSrc: any
   }
 
   openImgs(event: any){
-    console.log(event)
     var target = event.target || event.srcElement || event.currentTarget
-    console.log(target.id)
     var img = target.id
     this.imgSrc = "assets/images/gallery/"+img+".jpg"
     this.imgWidth = "auto"

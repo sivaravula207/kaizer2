@@ -29,7 +29,8 @@ export class ProductComponent implements OnInit {
   subKaizarDiv: any
   kaizerDivs: any;
   citiusDivs: any;
-  productName: any
+  productName: any;
+  productNameImg: any
   // New
   mainProductsDiv: boolean = false
 
@@ -55,6 +56,13 @@ export class ProductComponent implements OnInit {
   kaizarListProducts: boolean = false;
   citiusListProducts: boolean = false
   productHeading: any;
+  productAlsoAvaliable1: any;
+  productAlsoAvaliable2: any;
+  productAlsoAvaliable3: any;
+  alsoImg1: boolean = true;
+  alsoImg2: boolean = true;
+  alsoImg3: boolean = true;
+  alsoAvaDiv: boolean = true;
 
 
   constructor() { 
@@ -70,7 +78,6 @@ export class ProductComponent implements OnInit {
 
   ngOnInit(): void {
     this.productsObj = arr
-    console.log(this.productsObj)
     this.mainProductsDiv = true
     this.getProductstoLoop() 
   }
@@ -81,7 +88,6 @@ export class ProductComponent implements OnInit {
   getProductstoLoop(){
     
    for(let item of this.productsObj) {
-     console.log(item)
      
      if((item.companyName === "KAIZER")){
       this.kaizarAllProducts.push(item)
@@ -117,12 +123,6 @@ export class ProductComponent implements OnInit {
      else {}
     
    }
-   console.log(this.kaizerProductsCardiac)
-   
-   console.log(this.citiusProductsNutra)
-   console.log(this.citiusProductsOthers)
-   console.log(this.kaizarAllProducts) 
-   console.log(this.citiusAllProducts)
 
   }
 
@@ -136,7 +136,6 @@ export class ProductComponent implements OnInit {
     this.subKaizarDiv = false
     this.kaizerDivs = false
     this.citiusDivs = false
-    console.log(event.target.id)
     if(event.target.id === "kaizer"){
     this.kaizerDiv = true
     this.kaizerDivs = true
@@ -151,27 +150,26 @@ export class ProductComponent implements OnInit {
     this.subKaizarDiv = true
     this.kaizerDiv = false
     this.citiusDiv = false
-    console.log(this.kaizerDivs, this.citiusDivs)
     if(this.kaizerDivs){
-      console.log('if')
       this.kaizerDivs = true
       
     }
     else if(this.citiusDivs){
-      console.log('else')
 
       this.citiusDivs = true
 
     }
-    console.log(this.kaizerDivs, this.citiusDivs)
     
   }
 
   // New
 
   clickProduct(event: any){
+    this.alsoImg1 = true
+    this.alsoImg2 = true
+    this.alsoImg3 = true
+    this.alsoAvaDiv = true
     window.scroll(0,480);
-    console.log(event.target.id)
     this.selectedItem = event.target.id
     var target = event.target.id
     this.sinsanDiv = false
@@ -188,16 +186,42 @@ export class ProductComponent implements OnInit {
       if (did.productName == target) {
         this.companyName = did.companyName
         this.productName = did.productName
+        this.productNameImg = this.productName
         this.productComposition = did.composition
         this.productIndication = did.indication
         this.productPacking = did.packing
         this.productDose = did.dose
-        this.productAlsoAvaliable = did.alsoAvaliable
-        console.log(did)
+        this.productAlsoAvaliable1 = did.alsoAvaliable1
+        this.productAlsoAvaliable2 = did.alsoAvaliable2
+        this.productAlsoAvaliable3 = did.alsoAvaliable3
       }
       else{}
-      
     })
+
+    if(this.productName === "GLIMFIRST M1 M2/Forte"){
+      this.productNameImg = "GLIMFIRST M1 M2Forte"
+    }
+    else if(this.productName === "TELFIRST 20/40/80"){
+      this.productNameImg = "TELFIRST 204080"
+    }
+    else if(this.productName === "BDID SR/TH"){
+      this.productNameImg = "BDID SRTH"
+    }
+    else{}
+
+    if(this.productAlsoAvaliable1 === undefined){
+      this.alsoImg1 = false
+      this.alsoAvaDiv = false
+    }
+    else if(this.productAlsoAvaliable2 === undefined){
+      this.alsoImg2 = false
+      this.alsoImg3 = false
+    }
+    else if(this.productAlsoAvaliable3 === undefined){
+      
+      this.alsoImg3 = false
+    }
+    else {}
 
 if(this.companyName === 'KAIZER'){
   this.kaizarListProducts = true

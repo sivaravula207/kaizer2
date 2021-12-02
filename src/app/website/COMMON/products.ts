@@ -6,12 +6,14 @@
              {
                  "companyName": "KAIZER",
                  "department": "Anti-Diabetic",
-                 "productName": "TENLIP M",
+                 "productName": "TENLIP 20",
                  "composition": "Each uncoated bilayered tablet contains Teneligliptin Hydrobromide Hydrate eq. to tenegliptin 20 mg+ Metformin Hydrochloride I.P 500mg (as sustained release forms)",
                  "indication": "In Uncontrolled T2DM ",
                  "packing": "10*15 Alu-Alu",
                  "dose": "Once Daily",
-                 "alsoAvaliable": "Tenlip 20, Tenlip M Forte"
+                 "alsoAvaliable1": "Tenlip M",
+                 "alsoAvaliable2": "Tenlip M Forte"
+
              },
              {
                  "companyName": "KAIZER",
@@ -21,7 +23,9 @@
                  "indication": "In T2DM when Monotherapy fails",
                  "packing": "10*15 Alu-Alu",
                  "dose": "Once Daily",
-                 "alsoAvaliable": "Glimfirst M3,Glimfirst M4"
+                 "alsoAvaliable1": "Glimfirst MP1 MP2",
+                 "alsoAvaliable2": "Glimfirst MV 1 0.3",
+                 "alsoAvaliable3": "Glimfirst 1 2 3 4"
              },
              {
                  "companyName": "KAIZER",
@@ -40,7 +44,7 @@
                  "indication": "In Dyslipidemia with or without risk factors",
                  "packing": "10*15 Alu-Alu",
                  "dose": "Once Daily",
-                 "alsoAvaliable": "Atorfirst F"
+                 "alsoAvaliable1": "Atorfirst F"
              },
              {
                  "companyName": "KAIZER",
@@ -50,7 +54,10 @@
                  "indication": "In Uncontrolled Hypertension",
                  "packing": "10*15 Alu-Alu",
                  "dose": "Once Daily",
-                 "alsoAvaliable": "Telfirst AM,Telfirst CT, Telfirst H"
+                 "alsoAvaliable1": "Telfirst AM",
+                 "alsoAvaliable2": "Telfirst CT",
+                 "alsoAvaliable3": "Telfirst H" , 
+                 
              },
              {
                  "companyName": "KAIZER",
@@ -60,7 +67,7 @@
                  "indication": "In Edema with Hypertension",
                  "packing": "10*15 Alu-Alu",
                  "dose": "Once Daily",
-                 "alsoAvaliable": "Dyloop Plus"
+                 "alsoAvaliable1": "Dyloop Plus"
              },
              {
                  "companyName": "KAIZER",
@@ -71,15 +78,15 @@
                  "packing": "Strip of 10's",
                  "dose": "Twice Daily"
              },
-             {
-                 "companyName": "KAIZER",
-                 "department": "Cardiac",
-                 "productName": "BENIHALT",
-                 "composition": "Each Film Coated tablet contains Benidipine Hydrochloride 4/8 mg",
-                 "indication": "In Uncontrolled Hypertension",
-                 "packing": "10*10 Alu-Alu",
-                 "dose": "Once Daily"
-             },
+            //  {
+            //      "companyName": "KAIZER",
+            //      "department": "Cardiac",
+            //      "productName": "BENIHALT",
+            //      "composition": "Each Film Coated tablet contains Benidipine Hydrochloride 4/8 mg",
+            //      "indication": "In Uncontrolled Hypertension",
+            //      "packing": "10*10 Alu-Alu",
+            //      "dose": "Once Daily"
+            //  },
              {
                  "companyName": "KAIZER",
                  "department": "Cardiac",
@@ -133,7 +140,7 @@
                  "indication": "In Dyspepsia Related Conditions",
                  "packing": "10*15 Alu-Alu",
                  "dose": "Once Daily",
-                 "alsoAvaliable": "Bipra 20"
+                 "alsoAvaliable1": "Bipra 20"
              },
              {
                  "companyName": "KAIZER",
@@ -170,7 +177,8 @@
                  "indication": "In drug naive patients with T2DM",
                  "packing": "10*15 Alu-Alu",
                  "dose": "Once Daily",
-                 "alsoAvaliable": "Vilsure M, Vilsure Mforte"
+                 "alsoAvaliable1": "Vilsure M",
+                 "alsoAvaliable2": "Vilsure M Forte"
              },
              {
                  "companyName": "CITIUS",
@@ -189,7 +197,7 @@
                  "indication": "In Management of Uncontrolled PPHG with Obesity",
                  "packing": "10*10 Alu-Alu",
                  "dose": "Once Daily",
-                 "alsoAvaliable": "Dbose 0.2/0.3"
+                 "alsoAvaliable1": "D-Bose"
              },
              {
                  "companyName": "CITIUS",
@@ -199,18 +207,19 @@
                  "indication": "In T2DM patients with High HbA1c & Vascular Complications",
                  "packing": "Blisters 10*10",
                  "dose": "Once Daily",
-                 "alsoAvaliable": "Zicla M"
+                 "alsoAvaliable1": "Zicla M"
              },
-             {
-                 "companyName": "CITIUS",
-                 "department": "Anti-Diabetic",
-                 "productName": "SINGLIP M",
-                 "composition": "Each uncoated bilayered tablet contains Teneligliptin Hydrobromide Hydrate eq. to tenegliptin 20 mg+ Metformin Hydrochloride I.P 500mg (as sustained release forms)",
-                 "indication": "In Uncontrolled T2DM",
-                 "packing": "10*10 Alu-Alu",
-                 "dose": "Once Daily",
-                 "alsoAvaliable": "Singlip 20, Singlip M Forte"
-             },
+            //  {
+            //      "companyName": "CITIUS",
+            //      "department": "Anti-Diabetic",
+            //      "productName": "SINGLIP M",
+            //      "composition": "Each uncoated bilayered tablet contains Teneligliptin Hydrobromide Hydrate eq. to tenegliptin 20 mg+ Metformin Hydrochloride I.P 500mg (as sustained release forms)",
+            //      "indication": "In Uncontrolled T2DM",
+            //      "packing": "10*10 Alu-Alu",
+            //      "dose": "Once Daily",
+            //      "alsoAvaliable1": "Singlip 20",
+            //      "alsoAvaliable2": "Singlip M Forte"
+            //  },
              {
                  "companyName": "CITIUS",
                  "department": "Anti-Diabetic",
@@ -228,7 +237,7 @@
                  "indication": "In Primary Prevention of ASCVD",
                  "packing": "10*15 Alu-Alu",
                  "dose": "Once Daily",
-                 "alsoAvaliable": "Rozfirst F"
+                 "alsoAvaliable1": "Rozfirst F"
              },
              {
                  "companyName": "CITIUS",
@@ -242,12 +251,12 @@
              {
                  "companyName": "CITIUS",
                  "department": "Cardiac",
-                 "productName": "METFIRST  XL",
+                 "productName": "METFIRST XL",
                  "composition": "Each uncoated sustained release tablet contains, Metoprolol Tartrate I.P. 25 mg .",
                  "indication": "In Angina Pectoris, MI & CAD",
                  "packing": "10*10 Blister Pack",
                  "dose": "Once Daily",
-                 "alsoAvaliable": "Metfirst T"
+                 "alsoAvaliable1": "Metfirst T"
              },
              {
                  "companyName": "CITIUS",
@@ -262,7 +271,7 @@
                  "companyName": "CITIUS",
                  "department": "Cardiac",
                  "productName": "ZARBIL",
-                 "composition": "Each film coated tablet contains Alisartan Kamedoxomil 40 / 80mg",
+                 "composition": "Each film coated tablet contains Azilsartan Medoxomil 40 / 80mg",
                  "indication": "In Hypertensives with or without T2DM",
                  "packing": "10*10 Aluminium Foil",
                  "dose": "Once Daily"
@@ -315,7 +324,7 @@
              {
                  "companyName": "CITIUS",
                  "department": "Others",
-                 "productName": "DFRIZ ",
+                 "productName": "DFRIZ",
                  "composition": "Each film coated Tablet contains Diacerin I.P. 50mg+ Glucosamine Sulphate pottasium chloride USP 750 mg+ Methyl Sulphonyl Methane U.S.P. 250mg",
                  "indication": "For pain free movement in Osteoarthritis",
                  "packing": "10 tab*6'S Alu-Alu",
@@ -338,7 +347,8 @@
                  "indication": "In Erosive Esophagitis & GERD",
                  "packing": "10*15 Alu-Alu",
                  "dose": "Once Daily",
-                 "alsoAvaliable": "Panfirst 40, Panfirst 40 Inj"
+                 "alsoAvaliable1": "Panfirst 40",
+                 "alsoAvaliable2": "Panfirst 40 Inj"
              },
              {
                  "companyName": "CITIUS",
@@ -357,9 +367,27 @@
                  "indication": "In patients of Depression / Anxiety / Panic Disorder",
                  "packing": "10*15 Aluminium Foil",
                  "dose": "Once Daily"
-             }
-         
-     
+             },
+             {
+                "companyName": "CITIUS",
+                "department": "Others",
+                "productName": "OBEZITA 60/120 CAP",
+                "composition": "Each hard gelatin capsule contains Orlistat U.S.P.  60/120 mg. (as pellets)",
+                "indication": "In Obesity, BMI ≥ 30 or BMI ≥ 28 with risk factors",
+                "packing": "10*10 Alu-Alu",
+                "dose": "Before fatty Meal",
+                "alsoAvaliable1": "Obezita 120 cap"
+            },
+
+            {
+                "companyName": "CITIUS",
+                "department": "Others",
+                "productName": "SINTRIM",
+                "composition": "Each Veg Capsule contains Merastin 400mg which is a blend of Spaeranthus indicus flower heads 300 mg & Garcinia mangostana fruit rinds 100 mg",
+                "indication": "For Weight Management and Associated Metabolic Complications",
+                "packing": "Strip of 10",
+                "dose": "Twice daily",
+            },
   ];
 
 

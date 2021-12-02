@@ -11,7 +11,6 @@ export class BlogComponent implements OnInit {
 
   ngOnInit(): void {
     this.updatesArray = updatesArr
-    console.log(this.updatesArray)
     
   }
 
