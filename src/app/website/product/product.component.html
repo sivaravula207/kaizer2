@@ -72,7 +72,7 @@
                         </td>
                         <td style="color: #9ebe5b;font-weight: bold;" id="BENTOZ" (click)="clickProduct($event)">BENTOZ
                         </td>
-                        <td></td>
+                        <td  style="color: #DA8684;font-weight: bold;" id="MDAPA 5/10" (click)="clickProduct($event)">MDAPA 5/10</td>
                         <td style="color: #cb6a67;font-weight: bold;" id="GOXOI" (click)="clickProduct($event)">GOXOI
                         </td>
                       </tr>
@@ -83,7 +83,7 @@
                         </td>
                         <td style="color: #9ebe5b;font-weight: bold;">
                         </td>
-                        <td></td>
+                        <td  style="color: #DA8684;font-weight: bold;" id="MDAPA 5M/10M/FORTE" (click)="clickProduct($event)">MDAPA 5M/10M/FORTE</td>
                         <td style="color: #cb6a67;font-weight: bold;" id="SEEKLO SP" (click)="clickProduct($event)">SEEKLO SP
                         </td>
                       </tr>
@@ -122,12 +122,12 @@
           </div>
         </div>
       </div>
-      <label class="nav" for="about">
+      <label class="nav" for="about" id="kaizerActiveDiv">
         <span>
           <!-- KAIZER Division -->
 
           <h5 class="text-center" style="color:#0B939D; font-weight: bold;"><img src="../../../assets/images/product/Kaizer.png"
-              width="27%" height="100%" alt="">
+              width="27%" height="100%" alt="" (click)="activeCheck('kaizer')">
            Kaizer Division </h5>
 
 
@@ -183,7 +183,8 @@
                         <td style="color: #ff0000;font-weight: bold;" id="METFIRST  XL" (click)="clickProduct($event)">METFIRST  XL
                         </td>
                         <td style="color: #9ebe5b;font-weight: bold;"></td>
-                        <td></td>
+                        <td style="color: #DA8684;font-weight: bold;" id="SINXIGA 5/10" (click)="clickProduct($event)">SINXIGA 5/10</td>
+
                         <td style="color: #cb6a67;font-weight: bold;" id="DFRIZ" (click)="clickProduct($event)">DFRIZ
                         </td>
                       </tr>
@@ -193,7 +194,8 @@
                         <td style="color: #ff0000;font-weight: bold;" id="LOSFIRST" (click)="clickProduct($event)">LOSFIRST
                         </td>
                         <td style="color: #9ebe5b;font-weight: bold;"></td>
-                        <td></td>
+                        <td style="color: #DA8684;font-weight: bold;" id="SINXIGA - 5M/10M/FORTE" (click)="clickProduct($event)">SINXIGA - 5M/10M/FORTE</td>
+
                         <td style="color: #cb6a67;font-weight: bold;" id="SAN D" (click)="clickProduct($event)">SAN D
                         </td>
                       </tr>
@@ -237,10 +239,10 @@
           </div>
         </div>
       </div>
-      <label class="nav" for="contact">
+      <label class="nav" for="contact" id="citiusActiveDiv">
         <span>
           <h5 style="color:#0B939D; font-weight: bold;"><img src="../../../assets/images/product/Citius.png"
-              width="200px" height="" alt=""> Citius Division</h5>
+              width="200px" height="" alt="" (click)="activeCheck('citius')"> Citius Division</h5>
 
           <!-- CITIUS Division -->
         </span>

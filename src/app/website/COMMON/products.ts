@@ -78,6 +78,26 @@
                  "packing": "Strip of 10's",
                  "dose": "Twice Daily"
              },
+             {
+                "companyName": "KAIZER",
+                "department": "Cardiac",
+                "productName": "MDAPA 5/10",
+                "composition": "Each film coated tablet contains Dapagliflozin Propanediol Monohydrate 5 mg/10mg",
+                "indication": "In Type2 Diabetes Mellitus with Cardio and Renal Risk",
+                "packing": "Strip of 15 tabs",
+                "dose": "Once Daily"
+            },
+
+
+            {
+                "companyName": "KAIZER",
+                "department": "Cardiac",
+                "productName": "MDAPA 5M/10M/FORTE",
+                "composition": "Each film coated tablet contains Dapagliflozin Propanediol Monohydrate 5mg/10mg+ Metformin 500 mg/1000 sustained release",
+                "indication": "In Uncontrolled Type2 Diabetes Mellitus with Cardio and Renal Risk",
+                "packing": "Strip of 15 tabs",
+                "dose": "Once Daily"
+            },
             //  {
             //      "companyName": "KAIZER",
             //      "department": "Cardiac",
@@ -387,6 +407,26 @@
                 "indication": "For Weight Management and Associated Metabolic Complications",
                 "packing": "Strip of 10",
                 "dose": "Twice daily",
+            },
+
+            {
+                "companyName": "CITIUS",
+                "department": "Others",
+                "productName": "SINXIGA 5/10",
+                "composition": "Each film coated tablet contains Dapagliflozin Propanediol Monohydrate 5 mg/10mg",
+                "indication": "In Type2 Diabetes Mellitus with Cardiac complications",
+                "packing": "Strip of 15 tabs",
+                "dose": "Once Daily"
+            },
+
+            {
+                "companyName": "CITIUS",
+                "department": "Others",
+                "productName": "SINXIGA - 5M/10M/FORTE",
+                "composition": "Each film coated tablet contains Dapagliflozin Propanediol Monohydrate 5mg/10mg+ Metformin 500/1000 mg sustained release",
+                "indication": "In Type2 Diabetes Mellitus with Cardiac complications",
+                "packing": "Strip of 15 tabs",
+                "dose": "Once Daily",
             },
   ];
 

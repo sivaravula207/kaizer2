@@ -63,7 +63,8 @@ export class ProductComponent implements OnInit {
   alsoImg2: boolean = true;
   alsoImg3: boolean = true;
   alsoAvaDiv: boolean = true;
-
+  activeKaizer: boolean = true;
+  activeCitius: boolean = true;
 
   constructor() { 
     this.kaizerProductsDiabetic = []
@@ -207,6 +208,26 @@ export class ProductComponent implements OnInit {
     else if(this.productName === "BDID SR/TH"){
       this.productNameImg = "BDID SRTH"
     }
+
+    else if(this.productName === "MDAPA 5/10"){
+      this.productNameImg = "MDAPA 510"
+    }
+
+    else if(this.productName === "MDAPA 5M/10M/FORTE"){
+      this.productNameImg = "MDAPA 5M10MFORTE"
+    }
+
+    else if(this.productName === "SINXIGA 5/10"){
+      this.productNameImg = "SINXIGA 510"
+    }
+    else if(this.productName === "SINXIGA - 5M/10M/FORTE"){
+      this.productNameImg = "SINXIGA 5M10MFORTE"
+    }
+
+    else if(this.productName === "OBEZITA 60/120 CAP"){
+      this.productNameImg = "OBEZITA 60120 CAP"
+    }
+
     else{}
 
     if(this.productAlsoAvaliable1 === undefined){
@@ -254,6 +275,32 @@ else if(this.companyName === 'CITIUS'){
     this.kaizerDiv = false
     this.citiusDiv = false
     this.mainProductsDiv = true
+    var doc1: any;
+    var doc2: any;
+    // if(this.activeKaizer){
+    //   doc1 = document.getElementById('kaizerActiveDiv')
+    //   console.log(doc1)
+    //   doc1.click()
+    // }
+    // else if(this.activeCitius){
+    //   doc2 = document.getElementById('citiusActiveDiv')
+    //   console.log(doc2)
+
+    //   doc2.click()
+    // }
+    // else{}
+  }
+
+  activeCheck(event: any){
+    this.activeKaizer = false
+    this.activeCitius = false
+    if(event == 'kaizer'){
+      this.activeKaizer = true
+    }
+    else if(event == 'citius'){
+      this.activeCitius = true
+    }
+    else{}
   }
 
 }
