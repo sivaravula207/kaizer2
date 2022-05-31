@@ -18,7 +18,7 @@
 
 
 <div class="container" *ngIf="mainProductsDiv">
-  <div class="row pt-3 pb-3" style="padding-bottom: 0 !important;">
+  <!-- <div class="row pt-3 pb-3" style="padding-bottom: 0 !important;">
     <div class="col-md-12">
       <div class="text-center">
 
@@ -26,13 +26,13 @@
 
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="row">
     <div class="layout">
     
       <input name="nav" type="radio" class="about-radio" id="about" checked="checked" />
-      <div class="page about-page" style="padding-top: 20px;">
-        <div class="page-contents pt-5">
+      <div class="page about-page">
+        <div class="page-contents">
           <div class="col-md-12">
             <div class="card">
               <div class="card-body">
@@ -122,9 +122,8 @@
           </div>
         </div>
       </div>
-      <label class="nav" for="about" id="kaizerActiveDiv">
+      <!-- <label class="nav" for="about" id="kaizerActiveDiv">
         <span>
-          <!-- KAIZER Division -->
 
           <h5 class="text-center" style="color:#0B939D; font-weight: bold;"><img src="../../../assets/images/product/Kaizer.png"
               width="27%" height="100%" alt="" (click)="activeCheck('kaizer')">
@@ -132,7 +131,7 @@
 
 
         </span>
-      </label>
+      </label> -->
 
       <input name="nav" type="radio" class="contact-radio" id="contact" />
       <div class="page contact-page" style="padding-top: 20px;">
@@ -239,15 +238,14 @@
           </div>
         </div>
       </div>
-      <label class="nav" for="contact" id="citiusActiveDiv">
+      <!-- <label class="nav" for="contact" id="citiusActiveDiv">
         <span>
           <h5 style="color:#0B939D; font-weight: bold;"><img src="../../../assets/images/product/Citius.png"
               width="200px" height="" alt="" (click)="activeCheck('citius')"> Citius Division</h5>
 
-          <!-- CITIUS Division -->
         </span>
 
-      </label>
+      </label> -->
     </div>
   </div>
 </div>

@@ -54,15 +54,49 @@
  </div>
  </div>
  </div>
+
+
+
+ 
+
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
   <div class="container d-flex align-items-center">
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
     <span class="fa fa-bars"></span> Menu
   </button>
-  <div class="collapse navbar-collapse" id="ftco-nav">
-    <ul class="navbar-nav m-auto active">
+
+  
+
+  <!-- <div class="collapse navbar-collapse" id="ftco-nav">
+    <ul class="navbar-nav m-auto active"> -->
+
+      <div class="collapse navbar-collapse" id="exCollapsingNavbar2">
+        <ul class="nav navbar-nav ml-auto leftNav pt-2">
      <li class="nav-item"><a routerLink="/home" class="nav-link" routerLinkActive="actives">Home</a></li>
-     <li class="nav-item"><a routerLink="/aboutus" class="nav-link" routerLinkActive="actives">About</a></li>
+     <!-- <li class="nav-item"><a routerLink="/aboutus" class="nav-link" routerLinkActive="actives">About</a></li> -->
+
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navbarDropdownMenuLink2"
+       routerLinkActive="actives">About</a>
+          
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+        <a class="dropdown-item" routerLink="/aboutus" >About Us</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" routerLink="/milestone" style="cursor: pointer;">Milestone</a>
+      </div>
+    </li>
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+       id="navbarDropdownMenuLink" routerLinkActive="active">About</a>
+          
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" routerLink="/whyustwo" data-toggle="collapse" data-target=".navbar-collapse.show">Why Us</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" routerLink="/aboutus" data-toggle="collapse" data-target=".navbar-collapse.show" style="cursor: pointer;">Our &nbsp;Team</a>
+      </div>
+    </li>
+
      <li class="nav-item"><a routerLink="/therapy-areas" class="nav-link" routerLinkActive="actives">Therapy Areas</a></li>
      <li class="nav-item"><a routerLink="/product-portfolio" class="nav-link" routerLinkActive="actives">Product Portfolio</a></li>
      <li class="nav-item"><a routerLink="/updates" class="nav-link" routerLinkActive="actives">Updates</a></li>

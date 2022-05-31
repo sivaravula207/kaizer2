@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { TherapyComponent } from './therapy/therapy.component';
 import { ContactComponent } from './contact/contact.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,9 @@ const routes: Routes = [
   },
   {
     path: 'aboutus', component: AboutusComponent
+  },
+  {
+    path: 'milestone', component: TimelineComponent
   },
   {
     path: 'product-portfolio', component: ProductComponent
