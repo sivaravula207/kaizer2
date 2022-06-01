@@ -5,3 +5,6 @@
     font-weight: bold !important;
     
 }
+a {
+    cursor: pointer;
+}

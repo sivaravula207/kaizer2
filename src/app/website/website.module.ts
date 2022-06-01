@@ -25,7 +25,9 @@ import { TimelineComponent } from './timeline/timeline.component';
   GalleryComponent,
   ContactComponent,
   HomeComponent,
-  TherapyComponent, TimelineComponent],
+  TherapyComponent,
+  TimelineComponent
+],
   imports: [
     CommonModule,
     WebsiteRoutingModule
