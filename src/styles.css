@@ -8473,7 +8473,8 @@ body {
     position: relative;
     z-index: 3;
     padding: 0;
-    overflow: hidden; }
+    /* overflow: hidden; */
+   }
     .ftco-navbar-light:after {
       position: absolute;
       top: 0;
