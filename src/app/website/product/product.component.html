@@ -1,4 +1,3 @@
-
 <section class="hero-wrap hero-wrap-2 heroBreadcrumb"
   style="background-image: url('assets/images/bg_1.jpg'); background-position: 50% -66px;"
   data-stellar-background-ratio="0.5">
@@ -16,9 +15,10 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
+<div style="display: none">
 
-<div class="container" *ngIf="mainProductsDiv">
-  <!-- <div class="row pt-3 pb-3" style="padding-bottom: 0 !important;">
+  <div class="container" *ngIf="mainProductsDiv">
+    <!-- <div class="row pt-3 pb-3" style="padding-bottom: 0 !important;">
     <div class="col-md-12">
       <div class="text-center">
 
@@ -27,237 +27,610 @@
       </div>
     </div>
   </div> -->
-  <div class="row">
-    <div class="layout">
-    
-      <input name="nav" type="radio" class="about-radio" id="about" checked="checked" />
-      <div class="page about-page">
-        <div class="page-contents">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="table-responsive">
-                  
-                  <table class="table-bordered" style="width: 100%;text-align: center;">
-                    <thead>
-                      <tr style="color: #fff;font-weight: normal;">
-                        <th style="background-color: #27a4b1;">Anti Diabetic</th>
-                        <th style="background-color: #ff0000;">Cardiac</th>
-                        <th style="background-color: #9ebe5b;">Nutraceuticals</th>
-                        <th style="background-color: #DA8684;">Anti-Obesity</th>
+    <div class="row">
+      <div class="layout">
 
-                        <th style="background-color:#cb6a67">Others</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      
+        <input name="nav" type="radio" class="about-radio" id="about" checked="checked" />
+        <div class="page about-page">
+          <div class="page-contents">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="table-responsive">
 
-                      <tr>
-                        <td style="color: #27a4b1;font-weight: bold;" id="TENLIP 20" (click)="clickProduct($event)">TENLIP 20</td>
-                        <td style="color: #ff0000;font-weight: bold;" id="ATORFIRST" (click)="clickProduct($event)">ATORFIRST</td>
-                        <td style="color: #9ebe5b;font-weight: bold;" id="HOMO 16 D" (click)="clickProduct($event)">HOMO 16 D
-                        </td>
-                        <td  style="color: #DA8684;font-weight: bold;" id="BELYTRIM" (click)="clickProduct($event)">BELYTRIM</td>
-                        <td style="color: #cb6a67;font-weight: bold;" id="BIPRA D" (click)="clickProduct($event)">BIPRA D
-                        </td>
-                      </tr>
-                      <!-- *ngFor="let item of kaizerProductsCardiac" -->
-                      <tr>
-                        <td style="color: #27a4b1;font-weight: bold;" id="GLIMFIRST M1 M2/Forte"
-                          (click)="clickProduct($event)">GLIMFIRST M1 M2/Forte
+                    <table class="table-bordered" style="width: 100%;text-align: center;">
+                      <thead>
+                        <tr style="color: #fff;font-weight: normal;">
+                          <th style="background-color: #27a4b1;">Anti Diabetic</th>
+                          <th style="background-color: #ff0000;">Cardiac</th>
+                          <th style="background-color: #9ebe5b;">Nutraceuticals</th>
+                          <th style="background-color: #DA8684;">Anti-Obesity</th>
 
-                        </td>
+                          <th style="background-color:#cb6a67">Others</th>
+                        </tr>
+                      </thead>
+                      <tbody>
 
-                        <td style="color: #ff0000;font-weight: bold;" id="TELFIRST 20/40/80" (click)="clickProduct($event)">TELFIRST 20/40/80
-                        </td>
-                        <td style="color: #9ebe5b;font-weight: bold;" id="BENTOZ" (click)="clickProduct($event)">BENTOZ
-                        </td>
-                        <td  style="color: #DA8684;font-weight: bold;" id="MDAPA 5/10" (click)="clickProduct($event)">MDAPA 5/10</td>
-                        <td style="color: #cb6a67;font-weight: bold;" id="GOXOI" (click)="clickProduct($event)">GOXOI
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="color: #27a4b1;font-weight: bold;" id="DBRO" (click)="clickProduct($event)">DBRO
-                        </td>
-                        <td style="color: #ff0000;font-weight: bold;" id="DYLOOP" (click)="clickProduct($event)">DYLOOP
-                        </td>
-                        <td style="color: #9ebe5b;font-weight: bold;">
-                        </td>
-                        <td  style="color: #DA8684;font-weight: bold;" id="MDAPA 5M/10M/FORTE" (click)="clickProduct($event)">MDAPA 5M/10M/FORTE</td>
-                        <td style="color: #cb6a67;font-weight: bold;" id="SEEKLO SP" (click)="clickProduct($event)">SEEKLO SP
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="color: #27a4b1;font-weight: bold;"></td>
-                        <td style="color: #ff0000;font-weight: bold;" id="CILZEN" (click)="clickProduct($event)">CILZEN
-                        </td>
-                        <td style="color: #9ebe5b;font-weight: bold;"></td>
-                        <td></td>
-                        <td style="color: #cb6a67;font-weight: bold;" id="HOMO 16 PG" (click)="clickProduct($event)">HOMO 16 PG
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="color: #27a4b1;font-weight: bold;"></td>
-                        <td style="color: #ff0000;font-weight: bold;" id="RAMFIRST" (click)="clickProduct($event)">RAMFIRST
-                        </td>
-                        <td style="color: #9ebe5b;font-weight: bold;"></td>
-                        <td></td>
-                        <td style="color: #cb6a67;font-weight: bold;" >
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="color: #27a4b1;font-weight: bold;"></td>
-                        <td style="color: #ff0000;font-weight: bold;" id="CLOFIRST" (click)="clickProduct($event)">CLOFIRST
-                        </td>
-                        <td style="color: #9ebe5b;font-weight: bold;"></td>
-                        <td></td>
-                        <td style="color: #cb6a67;font-weight: bold;">
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+
+                        <tr>
+                          <td style="color: #27a4b1;font-weight: bold;" id="TENLIP 20" (click)="clickProduct($event)">
+                            TENLIP 20</td>
+                          <td style="color: #ff0000;font-weight: bold;" id="ATORFIRST" (click)="clickProduct($event)">
+                            ATORFIRST</td>
+                          <td style="color: #9ebe5b;font-weight: bold;" id="HOMO 16 D" (click)="clickProduct($event)">
+                            HOMO 16 D
+                          </td>
+                          <td style="color: #DA8684;font-weight: bold;" id="BELYTRIM" (click)="clickProduct($event)">
+                            BELYTRIM</td>
+                          <td style="color: #cb6a67;font-weight: bold;" id="BIPRA D" (click)="clickProduct($event)">
+                            BIPRA D
+                          </td>
+                        </tr>
+                        <!-- *ngFor="let item of kaizerProductsCardiac" -->
+                        <tr>
+                          <td style="color: #27a4b1;font-weight: bold;" id="GLIMFIRST M1 M2/Forte"
+                            (click)="clickProduct($event)">GLIMFIRST M1 M2/Forte
+
+                          </td>
+
+                          <td style="color: #ff0000;font-weight: bold;" id="TELFIRST 20/40/80"
+                            (click)="clickProduct($event)">TELFIRST 20/40/80
+                          </td>
+                          <td style="color: #9ebe5b;font-weight: bold;" id="BENTOZ" (click)="clickProduct($event)">
+                            BENTOZ
+                          </td>
+                          <td style="color: #DA8684;font-weight: bold;"></td>
+                          <td style="color: #cb6a67;font-weight: bold;" id="GOXOI" (click)="clickProduct($event)">GOXOI
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="color: #27a4b1;font-weight: bold;"></td>
+                          <td style="color: #ff0000;font-weight: bold;" id="DYLOOP" (click)="clickProduct($event)">
+                            DYLOOP
+                          </td>
+                          <td style="color: #9ebe5b;font-weight: bold;">
+                          </td>
+                          <td style="color: #DA8684;font-weight: bold;"></td>
+                          <td style="color: #cb6a67;font-weight: bold;" id="SEEKLO SP" (click)="clickProduct($event)">
+                            SEEKLO SP
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="color: #27a4b1;font-weight: bold;"></td>
+                          <td style="color: #ff0000;font-weight: bold;" id="CILZEN" (click)="clickProduct($event)">
+                            CILZEN
+                          </td>
+                          <td style="color: #9ebe5b;font-weight: bold;"></td>
+                          <td></td>
+                          <td style="color: #cb6a67;font-weight: bold;" id="HOMO 16 PG" (click)="clickProduct($event)">
+                            HOMO 16 PG
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="color: #27a4b1;font-weight: bold;"></td>
+                          <td style="color: #ff0000;font-weight: bold;" id="RAMFIRST" (click)="clickProduct($event)">
+                            RAMFIRST
+                          </td>
+                          <td style="color: #9ebe5b;font-weight: bold;"></td>
+                          <td></td>
+                          <td style="color: #cb6a67;font-weight: bold;">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="color: #27a4b1;font-weight: bold;"></td>
+                          <td style="color: #ff0000;font-weight: bold;" id="CLOFIRST" (click)="clickProduct($event)">
+                            CLOFIRST
+                          </td>
+                          <td style="color: #9ebe5b;font-weight: bold;"></td>
+                          <td></td>
+                          <td style="color: #cb6a67;font-weight: bold;">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- <label class="nav" for="about" id="kaizerActiveDiv">
+        <!-- <label class="nav" for="about" id="kaizerActiveDiv">
         <span>
 
           <h5 class="text-center" style="color:#0B939D; font-weight: bold;"><img src="../../../assets/images/product/Kaizer.png"
               width="27%" height="100%" alt="" (click)="activeCheck('kaizer')">
            Kaizer Division </h5>
-
+           
 
         </span>
       </label> -->
 
-      <input name="nav" type="radio" class="contact-radio" id="contact" />
-      <div class="page contact-page" style="padding-top: 20px;">
-        <div class="page-contents pt-5">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table-bordered" style="width: 100%;text-align: center;">
-                    <thead>
-                      <tr style="color: #fff;font-weight: normal;">
-                        <th style="background-color: #27a4b1;">Anti Diabetic</th>
-                        <th style="background-color: #ff0000;">Cardiac</th>
-                        <th style="background-color: #9ebe5b;">Nutraceuticals</th>
-                        <th style="background-color: #DA8684;">Anti-Obesity</th>
+        <input name="nav" type="radio" class="contact-radio" id="contact" />
+        <div class="page contact-page" style="padding-top: 20px;">
+          <div class="page-contents pt-5">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table-bordered" style="width: 100%;text-align: center;">
+                      <thead>
+                        <tr style="color: #fff;font-weight: normal;">
+                          <th style="background-color: #27a4b1;">Anti Diabetic</th>
+                          <th style="background-color: #ff0000;">Cardiac</th>
+                          <th style="background-color: #9ebe5b;">Nutraceuticals</th>
+                          <th style="background-color: #DA8684;">Anti-Obesity</th>
 
-                        <th style="background-color:#cb6a67">Others</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td style="color: #27a4b1;font-weight: bold;" id="VILSURE" (click)="clickProduct($event)">VILSURE
-                        </td>
-                        <td style="color: #ff0000;font-weight: bold;" id="ROZFIRST" (click)="clickProduct($event)">ROZFIRST
-                        </td>
-                        <td style="color: #9ebe5b;font-weight: bold;" id="HOMO 16 N" (click)="clickProduct($event)">HOMO 16 N
-                        </td>
-                        <td style="color: #DA8684;font-weight: bold;" id="SINTRIM" (click)="clickProduct($event)">SINTRIM</td>
+                          <th style="background-color:#cb6a67">Others</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="color: #27a4b1;font-weight: bold;" id="VILSURE" (click)="clickProduct($event)">
+                            VILSURE
+                          </td>
+                          <td style="color: #ff0000;font-weight: bold;" id="ROZFIRST" (click)="clickProduct($event)">
+                            ROZFIRST
+                          </td>
+                          <td style="color: #9ebe5b;font-weight: bold;" id="HOMO 16 N" (click)="clickProduct($event)">
+                            HOMO 16 N
+                          </td>
+                          <td style="color: #DA8684;font-weight: bold;" id="SINTRIM" (click)="clickProduct($event)">
+                            SINTRIM</td>
 
-                        <td style="color: #cb6a67;font-weight: bold;" id="SINCAL" (click)="clickProduct($event)">SINCAL
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="color: #27a4b1;font-weight: bold;" id="GLIMFIRST MV" (click)="clickProduct($event)">GLIMFIRST MV
-                        </td>
-                        <td style="color: #ff0000;font-weight: bold;" id="ROZFIRST GOLD" (click)="clickProduct($event)">ROZFIRST GOLD
-                        </td>
-                        <td style="color: #9ebe5b;font-weight: bold;" id="HOMO 16 LC" (click)="clickProduct($event)">HOMO 16 LC
-                        </td>
-                        <td style="color: #DA8684;font-weight: bold;" id="OBEZITA 60/120 CAP" (click)="clickProduct($event)">OBEZITA 60/120 CAP</td>
+                          <td style="color: #cb6a67;font-weight: bold;" id="SINCAL" (click)="clickProduct($event)">
+                            SINCAL
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="color: #27a4b1;font-weight: bold;" id="GLIMFIRST MV"
+                            (click)="clickProduct($event)">GLIMFIRST MV
+                          </td>
+                          <td style="color: #ff0000;font-weight: bold;" id="ROZFIRST GOLD"
+                            (click)="clickProduct($event)">ROZFIRST GOLD
+                          </td>
+                          <td style="color: #9ebe5b;font-weight: bold;" id="HOMO 16 LC" (click)="clickProduct($event)">
+                            HOMO 16 LC
+                          </td>
+                          <td style="color: #DA8684;font-weight: bold;" id="OBEZITA 60/120 CAP"
+                            (click)="clickProduct($event)">OBEZITA 60/120 CAP</td>
 
-                        <td style="color: #cb6a67;font-weight: bold;" id="ALPHA SINCAL" (click)="clickProduct($event)">ALPHA SINCAL
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="color: #27a4b1;font-weight: bold;" id="DBOSE M" (click)="clickProduct($event)">DBOSE M
-                        </td>
-                        <td style="color: #ff0000;font-weight: bold;" id="METFIRST  XL" (click)="clickProduct($event)">METFIRST  XL
-                        </td>
-                        <td style="color: #9ebe5b;font-weight: bold;"></td>
-                        <td style="color: #DA8684;font-weight: bold;" id="SINXIGA 5/10" (click)="clickProduct($event)">SINXIGA 5/10</td>
+                          <td style="color: #cb6a67;font-weight: bold;" id="ALPHA SINCAL"
+                            (click)="clickProduct($event)">ALPHA SINCAL
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="color: #27a4b1;font-weight: bold;" id="DBOSE M" (click)="clickProduct($event)">
+                            DBOSE M
+                          </td>
+                          <td style="color: #ff0000;font-weight: bold;" id="METFIRST  XL"
+                            (click)="clickProduct($event)">METFIRST XL
+                          </td>
+                          <td style="color: #9ebe5b;font-weight: bold;"></td>
+                          <td style="color: #DA8684;font-weight: bold;" id="SINXIGA 5/10"
+                            (click)="clickProduct($event)">SINXIGA 5/10</td>
 
-                        <td style="color: #cb6a67;font-weight: bold;" id="DFRIZ" (click)="clickProduct($event)">DFRIZ
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="color: #27a4b1;font-weight: bold;" id="ZICLA SR" (click)="clickProduct($event)">ZICLA SR
-                        </td>
-                        <td style="color: #ff0000;font-weight: bold;" id="LOSFIRST" (click)="clickProduct($event)">LOSFIRST
-                        </td>
-                        <td style="color: #9ebe5b;font-weight: bold;"></td>
-                        <td style="color: #DA8684;font-weight: bold;" id="SINXIGA - 5M/10M/FORTE" (click)="clickProduct($event)">SINXIGA - 5M/10M/FORTE</td>
+                          <td style="color: #cb6a67;font-weight: bold;" id="DFRIZ" (click)="clickProduct($event)">DFRIZ
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="color: #27a4b1;font-weight: bold;" id="ZICLA SR" (click)="clickProduct($event)">
+                            ZICLA SR
+                          </td>
+                          <td style="color: #ff0000;font-weight: bold;" id="LOSFIRST" (click)="clickProduct($event)">
+                            LOSFIRST
+                          </td>
+                          <td style="color: #9ebe5b;font-weight: bold;"></td>
+                          <td style="color: #DA8684;font-weight: bold;" id="SINXIGA - 5M/10M/FORTE"
+                            (click)="clickProduct($event)">SINXIGA - 5M/10M/FORTE</td>
 
-                        <td style="color: #cb6a67;font-weight: bold;" id="SAN D" (click)="clickProduct($event)">SAN D
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="color: #27a4b1;font-weight: bold;" id="BDID SR/TH" (click)="clickProduct($event)">BDID SR/TH
-                        </td>
-                        
-                        <td style="color: #ff0000;font-weight: bold;" id="ZARBIL" (click)="clickProduct($event)">ZARBIL</td>
-                        <td style="color: #9ebe5b;font-weight: bold;"></td>
-                        <td></td>
-                        <td style="color: #cb6a67;font-weight: bold;" id="PANFIRST D" (click)="clickProduct($event)">PANFIRST D
-                        </td>
-                      </tr>
+                          <td style="color: #cb6a67;font-weight: bold;" id="SAN D" (click)="clickProduct($event)">SAN D
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="color: #27a4b1;font-weight: bold;" id="BDID SR/TH" (click)="clickProduct($event)">
+                            BDID SR/TH
+                          </td>
 
-                      <tr>
-                        <td style="color: #27a4b1;font-weight: bold;">
-                        </td>
-                        <td style="color: #ff0000;font-weight: bold;" id="AMFIRST" (click)="clickProduct($event)">AMFIRST</td>
-                        <td style="color: #9ebe5b;font-weight: bold;"></td>
-                        <td></td>
-                        <td style="color: #cb6a67;font-weight: bold;" id="CORBET XT" (click)="clickProduct($event)">CORBET XT
+                          <td style="color: #ff0000;font-weight: bold;" id="ZARBIL" (click)="clickProduct($event)">
+                            ZARBIL</td>
+                          <td style="color: #9ebe5b;font-weight: bold;"></td>
+                          <td></td>
+                          <td style="color: #cb6a67;font-weight: bold;" id="PANFIRST D" (click)="clickProduct($event)">
+                            PANFIRST D
+                          </td>
+                        </tr>
 
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="color: #27a4b1;font-weight: bold;">
-                        </td>
-                        <td style="color: #ff0000;font-weight: bold;"></td>
-                        <td style="color: #9ebe5b;font-weight: bold;"></td>
-                        <td></td>
-                        <td style="color: #cb6a67;font-weight: bold;" id="CAMDEM" (click)="clickProduct($event)">CAMDEM
+                        <tr>
+                          <td style="color: #27a4b1;font-weight: bold;">
+                          </td>
+                          <td style="color: #ff0000;font-weight: bold;" id="AMFIRST" (click)="clickProduct($event)">
+                            AMFIRST</td>
+                          <td style="color: #9ebe5b;font-weight: bold;"></td>
+                          <td></td>
+                          <td style="color: #cb6a67;font-weight: bold;" id="CORBET XT" (click)="clickProduct($event)">
+                            CORBET XT
 
-                        </td>
-                      </tr>
-                      
-                    </tbody>
-                  </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="color: #27a4b1;font-weight: bold;">
+                          </td>
+                          <td style="color: #ff0000;font-weight: bold;"></td>
+                          <td style="color: #9ebe5b;font-weight: bold;"></td>
+                          <td></td>
+                          <td style="color: #cb6a67;font-weight: bold;" id="CAMDEM" (click)="clickProduct($event)">
+                            CAMDEM
+
+                          </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- <label class="nav" for="contact" id="citiusActiveDiv">
+        <!-- <label class="nav" for="contact" id="citiusActiveDiv">
         <span>
           <h5 style="color:#0B939D; font-weight: bold;"><img src="../../../assets/images/product/Citius.png"
-              width="200px" height="" alt="" (click)="activeCheck('citius')"> Citius Division</h5>
-
+            width="200px" height="" alt="" (click)="activeCheck('citius')"> Citius Division</h5>
+            
         </span>
 
       </label> -->
+      </div>
     </div>
+  </div>
+
+
+  <!-- kaizar Div starts -->
+  <div class="container" style="padding-top: 20px;" *ngIf="kaizerDiv">
+    <div class="row">
+      <div class="col-md-9">
+        <div style="color: #299ADC;"> <a (click)="backtoproducts()">Back to Products</a> </div>
+        <div class="text-center" style="padding-bottom: 20px;">
+          <img src="../../../assets/images/product/subProducts/{{productNameImg}}.png" alt="" width="200px"
+            height="100px" class="img-fluid"> <br>
+
+          <!-- <h4 style="color: #cb6a67; font-weight: bold;">{{productName}}</h4> -->
+          <!-- <img src="../../../assets/images/product/subProducts/2.jpeg" alt="" class="img-fluid"> <br>
+          <img src="../../../assets/images/product/subProducts/3.jpeg" alt="" class="img-fluid"> -->
+
+        </div>
+
+        <h4>
+
+          <span style="color: #299ADC; font-weight: 900;">Description</span>
+        </h4>
+        <div style="padding-bottom: 20px;" class="d-flex">
+          <div style="color: #27AAC2; font-size: 18px; font-weight: bold; ">Composition: </div>
+          <div style="padding-left: 66px; color: #000; font-weight: 200;">{{productComposition}}</div>
+
+        </div>
+        <div style="padding-bottom: 20px;" class="d-flex">
+          <div class="" style="color: #27AAC2; font-size: 18px; font-weight: bold; ">Indication: </div>
+          <div style="padding-left: 89px; color: #000; font-weight: 200;"> {{productIndication}}</div>
+        </div>
+        <div style="padding-bottom: 20px;" class="d-flex">
+          <div style="color: #27AAC2; font-size: 18px; font-weight: bold; ">Packing: </div>
+          <div style="padding-left: 106px; color: #000; font-weight: 200;"> {{productPacking}}</div>
+
+        </div>
+        <div style="padding-bottom: 20px;" class="d-flex">
+          <div style="color: #27AAC2; font-size: 18px; font-weight: bold;">Dose: </div>
+          <div style="padding-left: 133px; color: #000; font-weight: 200;"> {{productDose}}</div>
+
+        </div>
+
+        <div *ngIf="alsoAvaDiv" style="padding-bottom: 20px;" class="d-flex">
+          <div style="color: #27AAC2; font-size: 18px; font-weight: bold;">Also Available: </div>
+          <div style="padding-left: 63px; color: #000; font-weight: 200;">
+            <img *ngIf="alsoImg1" src="../../../assets/images/product/subProducts/{{productAlsoAvaliable1}}.png" alt=""
+              width="180px" height="100px" class="img-fluid"> <br>
+
+            <!-- {{productAlsoAvaliable1}} -->
+          </div>
+          <div style="padding-left: 63px; color: #000; font-weight: 200;">
+            <img *ngIf="alsoImg2" src="../../../assets/images/product/subProducts/{{productAlsoAvaliable2}}.png" alt=""
+              width="180px" height="100px" class="img-fluid"> <br>
+
+            <!-- {{productAlsoAvaliable2}} -->
+          </div>
+          <div style="padding-left: 63px; color: #000; font-weight: 200;">
+            <img *ngIf="alsoImg3" src="../../../assets/images/product/subProducts/{{productAlsoAvaliable3}}.png" alt=""
+              width="180px" height="100px" class="img-fluid"> <br>
+
+            <!-- {{productAlsoAvaliable3}} -->
+          </div>
+
+          <!-- <div style="padding-left: 103px; padding-right: 103px; color: #000; font-weight: 200;"> 
+        <img src="../../../assets/images/product/tenlip_m.png" alt="" class="img-fluid"></div>
+        <div>
+          <img src="../../../assets/images/product/tenlip_m_forte.jpg" alt="" class="img-fluid">
+        </div> -->
+        </div>
+      </div>
+      <div class="col-md-3" style="background-color: whitesmoke; ">
+        <h3 class="text-center" style="background-color: #1C4D86; color: white; font-weight: bold; font-size: 20px;
+      padding: 5px;
+      margin-top: 4px;">
+          {{productHeading}}
+        </h3>
+        <aside>
+
+          <ul class="nav nav-list" style="color:darkslategrey;" *ngIf="kaizarListProducts">
+            <li [ngClass]="{'active': selectedItem == item.productName}" id="{{item.productName}}"
+              (click)="clickProduct($event)" *ngFor="let item of kaizarAllProducts">{{item.productName}}</li>
+          </ul>
+
+          <ul class="nav nav-list" style="color:darkslategrey;" *ngIf="citiusListProducts">
+            <li [ngClass]="{'active': selectedItem == item.productName}" id="{{item.productName}}"
+              (click)="clickProduct($event)" *ngFor="let item of citiusAllProducts">{{item.productName}}</li>
+          </ul>
+
+
+        </aside>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- kaizar Div ends -->
+
+
+  <!-- citius Div starts -->
+  <div class="container" style="padding-top: 20px;" *ngIf="citiusDiv">
+    <div class="row">
+      <div class="col-md-9">
+        <div style="color: #299ADC;"> <a (click)="backtoproducts()">Back to Products</a> </div>
+
+        <div class="text-center" style="padding-bottom: 20px;">
+
+          <img src="../../../assets/images/product/Tenlip 20.jpg" alt="" class="img-fluid">
+        </div>
+
+        <h4>
+
+          <!-- <span style="color: #d5a31b; font-weight: bold;"> {{productName}}</span>  -->
+          <span style="color: #299ADC; font-weight: 900;">Description</span>
+        </h4>
+        <div style="padding-bottom: 20px;" class="d-flex">
+          <div style="color: #27AAC2; font-size: 18px; font-weight: bold; ">Composition: </div>
+          <div style="padding-left: 66px; color: #000; font-weight: 200;"> Rosuvastatin 5 mg + Clopidogrel 150 mg +
+            Paracetamol 250 mg</div>
+        </div>
+        <div style="padding-bottom: 20px;" class="d-flex">
+          <div class="" style="color: #27AAC2; font-size: 18px; font-weight: bold; ">Indication: </div>
+          <div style="padding-left: 89px; color: #000; font-weight: 200;"> Used for atherosclerosis condition and reduce
+            the left ventricular thickness, effect on diabetes mellitus</div>
+        </div>
+        <div style="padding-bottom: 20px;" class="d-flex">
+          <div style="color: #27AAC2; font-size: 18px; font-weight: bold; ">Packing: </div>
+          <div style="padding-left: 106px; color: #000; font-weight: 200;"> Alu Alu 10x10 film coated</div>
+        </div>
+        <div style="padding-bottom: 20px;" class="d-flex">
+          <div style="color: #27AAC2; font-size: 18px; font-weight: bold;">Dose: </div>
+          <div style="padding-left: 133px; color: #000; font-weight: 200;"> Rosuvastatin 5 mg + Clopidogrel 150 mg +
+            Paracetamol 250 mg</div>
+        </div>
+
+        <div style="padding-bottom: 20px;" class="d-flex">
+          <div style="color: #27AAC2; font-size: 18px; font-weight: bold;">Also Avaiable: </div>
+          <div style="padding-left: 103px; padding-right: 103px; color: #000; font-weight: 200;">
+            <img src="../../../assets/images/product/tenlip_m.png" alt="" width="90" class="img-fluid">
+          </div>
+          <div>
+            <img src="../../../assets/images/product/tenlip_m_forte.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3" style="background-color: whitesmoke; ">
+        <h3 class="text-center" style="background-color: #1C4D86; color: white; font-weight: bold; font-size: 20px;
+      padding: 5px;
+      margin-top: 4px;">
+          Citius Products
+        </h3>
+        <aside>
+          <ul class="nav nav-list" style="color:darkslategrey;">
+            <li class="active">
+              VILSURE
+            </li>
+            <li>
+              GLIMFIRST MV
+            </li>
+            <li>
+              DBOSE
+            </li>
+            <li>
+              ZICLA
+            </li>
+            <!-- <li>
+            SINGLIP
+          </li> -->
+
+
+
+
+            <li>
+              ROZFIRST
+            </li>
+            <li>
+              ROZFIRST GOLD
+            </li>
+            <li>
+              METFIRST
+            </li>
+            <li>
+              OBEZITA
+            </li>
+            <li>
+              HOMO 16 N
+            </li>
+            <li>
+              HOMO 16 LC
+            </li>
+            <li>
+              SINCAL
+            </li>
+            <li>
+              ALPHA SINCAL
+            </li>
+            <li>
+              DFRIZ
+
+            </li>
+            <li>
+              SAN D
+
+            </li>
+            <li>
+              PANFIRST
+
+            </li>
+            <li>
+              ZARBIL
+
+            </li>
+            <li>
+              AMFIRST
+
+            </li>
+            <li>
+              CORBET XT
+
+            </li>
+            <li>
+              BDID
+
+            </li>
+            <li>
+              CAMDEM</li>
+            <li>
+              LOSFIRST</li>
+
+          </ul>
+        </aside>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- citius Div ends -->
+
+</div>
+
+
+<div class="container-fluid" style="padding: 20px" *ngIf="mainProductsDiv">
+  <div class="row">
+    <div class="col-md-1 col-lg-1"></div>
+    <div class="col-md-2 col-lg-2" style="padding: 0;">
+      <div class="table-responsive">
+        <table class="table-bordered" style="width: 100%;">
+          <thead>
+            <tr style="color: #fff;font-weight: normal; text-align: center">
+              <th style="background-color: #27a4b1;">Anti Diabetic</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of allAntiDiabeticProducts" style="font-size: 15px">
+              <td style="color: #27a4b1;font-weight: bold;" [id]="item.productName" (click)="clickProduct($event)">
+                {{item.productName}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    
+    <div class="col-md-2 col-lg-2" style="padding: 0;">
+      <div class="table-responsive">
+        <table class="table-bordered" style="width: 100%;">
+          <thead>
+            <tr style="color: #fff;font-weight: normal; text-align: center">
+              <th style="background-color: #ff0000;">Cardiac</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of allCardioProducts"  style="font-size: 15px">
+              <td style="color: #ff0000;font-weight: bold;" [id]="item.productName" (click)="clickProduct($event)">
+                {{item.productName}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-2 col-lg-2" style="padding: 0;">
+      <div class="table-responsive">
+        <table class="table-bordered" style="width: 100%;">
+          <thead>
+            <tr style="color: #fff;font-weight: normal; text-align: center">
+              <th style="background-color: #CE8B77;">Gastroenterology</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of allGastroProducts"  style="font-size: 15px">
+              <td style="color: #CE8B77;font-weight: bold;" [id]="item.productName" (click)="clickProduct($event)">
+                {{item.productName}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-2 col-lg-2" style="padding: 0;">
+      <div class="table-responsive">
+        <table class="table-bordered" style="width: 100%;">
+          <thead>
+            <tr style="color: #fff;font-weight: normal; text-align: center">
+              <th style="background-color: #DA8684;">Anti-Obesity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of allObesityProducts"  style="font-size: 15px">
+              <td style="color: #DA8684;font-weight: bold;" [id]="item.productName" (click)="clickProduct($event)">
+                {{item.productName}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-lg-2" style="padding: 0;">
+      <div class="table-responsive">
+        <table class="table-bordered" style="width: 100%;">
+          <thead>
+            <tr style="color: #fff;font-weight: normal; text-align: center">
+              <th style="background-color: #cb6a67;">Others</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of allOtherProducts" style="font-size: 15px">
+              <td style="color: #cb6a67;font-weight: bold;" [id]="item.productName" (click)="clickProduct($event)">
+                {{item.productName}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-1 col-lg-1"></div>
+
   </div>
 </div>
 
 
-<!-- kaizar Div starts -->
-<div class="container" style="padding-top: 20px;" *ngIf="kaizerDiv">
+<div class="container" style="padding-top: 20px;" *ngIf="subProductsDiv">
   <div class="row">
     <div class="col-md-9">
       <div style="color: #299ADC;"> <a (click)="backtoproducts()">Back to Products</a> </div>
       <div class="text-center" style="padding-bottom: 20px;">
-        <img src="../../../assets/images/product/subProducts/{{productNameImg}}.png" alt="" width="200px" height="100px" class="img-fluid"> <br>
+        <img src="../../../assets/images/product/subProducts/{{productNameImg}}.png" alt="Image" width="200px"
+          height="100px" class="img-fluid"> <br>
 
         <!-- <h4 style="color: #cb6a67; font-weight: bold;">{{productName}}</h4> -->
         <!-- <img src="../../../assets/images/product/subProducts/2.jpeg" alt="" class="img-fluid"> <br>
@@ -267,7 +640,8 @@
 
       <h4>
 
-        <span style="color: #299ADC; font-weight: 900;">Description</span> </h4>
+        <span style="color: #299ADC; font-weight: 900;">Description</span>
+      </h4>
       <div style="padding-bottom: 20px;" class="d-flex">
         <div style="color: #27AAC2; font-size: 18px; font-weight: bold; ">Composition: </div>
         <div style="padding-left: 66px; color: #000; font-weight: 200;">{{productComposition}}</div>
@@ -282,7 +656,7 @@
         <div style="padding-left: 106px; color: #000; font-weight: 200;"> {{productPacking}}</div>
 
       </div>
-      <div style="padding-bottom: 20px;" class="d-flex">
+      <div style="padding-bottom: 20px;" class="d-flex" *ngIf="productDose != undefined">
         <div style="color: #27AAC2; font-size: 18px; font-weight: bold;">Dose: </div>
         <div style="padding-left: 133px; color: #000; font-weight: 200;"> {{productDose}}</div>
 
@@ -290,190 +664,49 @@
 
       <div *ngIf="alsoAvaDiv" style="padding-bottom: 20px;" class="d-flex">
         <div style="color: #27AAC2; font-size: 18px; font-weight: bold;">Also Available: </div>
-        <div style="padding-left: 63px; color: #000; font-weight: 200;"> 
-        <img *ngIf="alsoImg1" src="../../../assets/images/product/subProducts/{{productAlsoAvaliable1}}.png" alt="" width="180px" height="100px" class="img-fluid"> <br>
+        <div style="padding-left: 63px; color: #000; font-weight: 200;" *ngIf="productAlsoAvaliable1 != undefined">
+          <img *ngIf="alsoImg1" src="../../../assets/images/product/subProducts/{{productAlsoAvaliable1}}.png" alt=""
+            width="180px" height="100px" class="img-fluid"> <br>
 
-        <!-- {{productAlsoAvaliable1}} -->
-          </div>
-        <div style="padding-left: 63px; color: #000; font-weight: 200;">
-        <img *ngIf="alsoImg2" src="../../../assets/images/product/subProducts/{{productAlsoAvaliable2}}.png" alt="" width="180px" height="100px" class="img-fluid"> <br>
+          <!-- {{productAlsoAvaliable1}} -->
+        </div>
+        <div style="padding-left: 63px; color: #000; font-weight: 200;" *ngIf="productAlsoAvaliable2 != undefined">
+          <img *ngIf="alsoImg2" src="../../../assets/images/product/subProducts/{{productAlsoAvaliable2}}.png" alt=""
+            width="180px" height="100px" class="img-fluid"> <br>
 
-           <!-- {{productAlsoAvaliable2}} -->
-          </div>
-        <div style="padding-left: 63px; color: #000; font-weight: 200;">
-        <img *ngIf="alsoImg3" src="../../../assets/images/product/subProducts/{{productAlsoAvaliable3}}.png" alt="" width="180px" height="100px" class="img-fluid"> <br>
+          <!-- {{productAlsoAvaliable2}} -->
+        </div>
+        <div style="padding-left: 63px; color: #000; font-weight: 200;"  *ngIf="productAlsoAvaliable3 != undefined">
+          <img *ngIf="alsoImg3" src="../../../assets/images/product/subProducts/{{productAlsoAvaliable3}}.png" alt=""
+            width="180px" height="100px" class="img-fluid"> <br>
 
-           <!-- {{productAlsoAvaliable3}} -->
-          </div>
+          <!-- {{productAlsoAvaliable3}} -->
+        </div>
 
         <!-- <div style="padding-left: 103px; padding-right: 103px; color: #000; font-weight: 200;"> 
-        <img src="../../../assets/images/product/tenlip_m.png" alt="" class="img-fluid"></div>
-        <div>
-          <img src="../../../assets/images/product/tenlip_m_forte.jpg" alt="" class="img-fluid">
-        </div> -->
+      <img src="../../../assets/images/product/tenlip_m.png" alt="" class="img-fluid"></div>
+      <div>
+        <img src="../../../assets/images/product/tenlip_m_forte.jpg" alt="" class="img-fluid">
+      </div> -->
       </div>
     </div>
     <div class="col-md-3" style="background-color: whitesmoke; ">
-      <h3 class="text-center" style="background-color: #1C4D86; color: white; font-weight: bold; font-size: 20px;
-      padding: 5px;
-      margin-top: 4px;">
-        {{productHeading}}
+      <h3 class="text-center" style="background-color: #1C4D86; color: white; font-weight: bold; font-size: 16px;
+    padding: 5px;
+    margin-top: 4px;">
+        <!-- {{productHeading}} -->
+        Products
       </h3>
       <aside>
 
-        <ul class="nav nav-list" style="color:darkslategrey;" *ngIf="kaizarListProducts">
-          <li  [ngClass]="{'active': selectedItem == item.productName}"
-           id="{{item.productName}}" (click)="clickProduct($event)" *ngFor="let item of kaizarAllProducts">{{item.productName}}</li>
+        <ul class="nav nav-list" style="color:darkslategrey; font-size: 14px;">
+          <li  *ngFor="let item of productsObj" [ngClass]="{'active': selectedItem == item.productName}" [id]="item.productName"
+            (click)="clickProduct($event)">{{item.productName}}</li>
         </ul>
 
-        <ul class="nav nav-list" style="color:darkslategrey;" *ngIf="citiusListProducts">
-          <li  [ngClass]="{'active': selectedItem == item.productName}"
-           id="{{item.productName}}" (click)="clickProduct($event)" *ngFor="let item of citiusAllProducts">{{item.productName}}</li>
-        </ul>
-
-        
       </aside>
 
     </div>
 
   </div>
 </div>
-<!-- kaizar Div ends -->
-
-
-<!-- citius Div starts -->
-<div class="container" style="padding-top: 20px;" *ngIf="citiusDiv">
-  <div class="row">
-    <div class="col-md-9">
-      <div style="color: #299ADC;"> <a (click)="backtoproducts()">Back to Products</a> </div>
-
-      <div class="text-center" style="padding-bottom: 20px;">
-
-        <img src="../../../assets/images/product/Tenlip 20.jpg" alt="" class="img-fluid">
-      </div>
-
-      <h4>
-
-        <!-- <span style="color: #d5a31b; font-weight: bold;"> {{productName}}</span>  -->
-        <span style="color: #299ADC; font-weight: 900;">Description</span> </h4>
-      <div style="padding-bottom: 20px;" class="d-flex">
-        <div style="color: #27AAC2; font-size: 18px; font-weight: bold; ">Composition: </div>
-        <div style="padding-left: 66px; color: #000; font-weight: 200;"> Rosuvastatin 5 mg + Clopidogrel 150 mg +
-          Paracetamol 250 mg</div>
-      </div>
-      <div style="padding-bottom: 20px;" class="d-flex">
-        <div class="" style="color: #27AAC2; font-size: 18px; font-weight: bold; ">Indication: </div>
-        <div style="padding-left: 89px; color: #000; font-weight: 200;"> Used for atherosclerosis condition and reduce
-          the left ventricular thickness, effect on diabetes mellitus</div>
-      </div>
-      <div style="padding-bottom: 20px;" class="d-flex">
-        <div style="color: #27AAC2; font-size: 18px; font-weight: bold; ">Packing: </div>
-        <div style="padding-left: 106px; color: #000; font-weight: 200;"> Alu Alu 10x10 film coated</div>
-      </div>
-      <div style="padding-bottom: 20px;" class="d-flex">
-        <div style="color: #27AAC2; font-size: 18px; font-weight: bold;">Dose: </div>
-        <div style="padding-left: 133px; color: #000; font-weight: 200;"> Rosuvastatin 5 mg + Clopidogrel 150 mg +
-          Paracetamol 250 mg</div>
-      </div>
-
-      <div style="padding-bottom: 20px;" class="d-flex">
-        <div style="color: #27AAC2; font-size: 18px; font-weight: bold;">Also Avaiable: </div>
-        <div style="padding-left: 103px; padding-right: 103px; color: #000; font-weight: 200;">
-          <img src="../../../assets/images/product/tenlip_m.png" alt="" width="90" class="img-fluid"></div>
-        <div>
-          <img src="../../../assets/images/product/tenlip_m_forte.jpg" alt="" class="img-fluid">
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3" style="background-color: whitesmoke; ">
-      <h3 class="text-center" style="background-color: #1C4D86; color: white; font-weight: bold; font-size: 20px;
-      padding: 5px;
-      margin-top: 4px;">
-        Citius Products
-      </h3>
-      <aside>
-        <ul class="nav nav-list" style="color:darkslategrey;">
-          <li class="active">
-            VILSURE
-          </li>
-          <li>
-            GLIMFIRST MV
-          </li>
-          <li>
-            DBOSE
-          </li>
-          <li>
-            ZICLA
-          </li>
-          <!-- <li>
-            SINGLIP
-          </li> -->
-
-
-
-
-          <li>
-            ROZFIRST
-          </li>
-          <li>
-            ROZFIRST GOLD
-          </li>
-          <li>
-            METFIRST
-          </li>
-          <li>
-            OBEZITA
-          </li>
-          <li>
-            HOMO 16 N
-          </li>
-          <li>
-            HOMO 16 LC
-          </li>
-          <li>
-            SINCAL
-          </li>
-          <li>
-            ALPHA SINCAL
-          </li>
-          <li>
-            DFRIZ
-
-          </li>
-          <li>
-            SAN D
-
-          </li>
-          <li>
-            PANFIRST
-
-          </li>
-          <li>
-            ZARBIL
-
-          </li>
-          <li>
-            AMFIRST
-
-          </li>
-          <li>
-            CORBET XT
-
-          </li>
-          <li>
-            BDID
-
-          </li>
-          <li>
-            CAMDEM</li>
-          <li>
-            LOSFIRST</li>
-
-        </ul>
-      </aside>
-
-    </div>
-
-  </div>
-</div>
-<!-- citius Div ends -->

@@ -65,7 +65,12 @@ export class ProductComponent implements OnInit {
   alsoAvaDiv: boolean = true;
   activeKaizer: boolean = true;
   activeCitius: boolean = true;
-
+  allAntiDiabeticProducts: any = [];
+  allObesityProducts: any = [];
+  allCardioProducts: any = [];
+  allGastroProducts: any = [];
+  allOtherProducts: any = [];
+  subProductsDiv: boolean = false;
   constructor() { 
     this.kaizerProductsDiabetic = []
     this.kaizerProductsCardiac = []
@@ -75,6 +80,7 @@ export class ProductComponent implements OnInit {
     this.citiusProductsCardiac = []
     this.citiusProductsNutra = []
     this.citiusProductsOthers = []
+    this.allAntiDiabeticProducts = []
   }
 
   ngOnInit(): void {
@@ -90,41 +96,61 @@ export class ProductComponent implements OnInit {
     
    for(let item of this.productsObj) {
      
-     if((item.companyName === "KAIZER")){
-      this.kaizarAllProducts.push(item)
-     }
-     else if(item.companyName === "CITIUS"){
-      this.citiusAllProducts.push(item)
-     }
+    //  if((item.companyName === "KAIZER")){
+    //   this.kaizarAllProducts.push(item)
+    //  }
+    //  else if(item.companyName === "CITIUS"){
+    //   this.citiusAllProducts.push(item)
+    //  }
 
-     else if((item.companyName === "KAIZER" && item.department === "Anti-Diabetic")){
-      this.kaizerProductsDiabetic.push(item)
+    //  else if((item.companyName === "KAIZER" && item.department === "Anti-Diabetic")){
+    //   this.kaizerProductsDiabetic.push(item)
+    //  }
+    //  else if((item.companyName === "KAIZER" && item.department === "Cardiac")){
+    //   this.kaizerProductsCardiac.push(item)
+    //  }
+    //  else if((item.companyName === "KAIZER" && item.department === "Nutraceuticals")){
+    //   this.kaizerProductsNutra.push(item)
+    //  }
+    //  else if((item.companyName === "KAIZER" && item.department === "Others")){
+    //   this.kaizerProductsOthers.push(item)
+    //  }
+    //  else if((item.companyName === "CITIUS" && item.department === "Anti-Diabetic")){
+    //   this.citiusProductsDiabetic.push(item)
+    //  }
+    //  else if((item.companyName === "CITIUS" && item.department === "Cardiac")){
+    //   this.citiusProductsCardiac.push(item)
+    //  }
+    //  else if((item.companyName === "CITIUS" && item.department === "Nutraceuticals")){
+    //   this.citiusProductsNutra.push(item)
+    //  }
+    //  else if((item.companyName === "CITIUS" && item.department === "Others")){
+    //   this.citiusProductsOthers.push(item)
+    //  }
+    //  else {}
+
+     if(item.department === "Anti-Diabetic"){
+      this.allAntiDiabeticProducts.push(item)
      }
-     else if((item.companyName === "KAIZER" && item.department === "Cardiac")){
-      this.kaizerProductsCardiac.push(item)
+     else if(item.department === "Cardiac"){
+      this.allCardioProducts.push(item)
+  }
+     else if(item.department === "Others"){
+      this.allOtherProducts.push(item)
      }
-     else if((item.companyName === "KAIZER" && item.department === "Nutraceuticals")){
-      this.kaizerProductsNutra.push(item)
+     else if(item.department === "Obesity"){
+      this.allObesityProducts.push(item)
      }
-     else if((item.companyName === "KAIZER" && item.department === "Others")){
-      this.kaizerProductsOthers.push(item)
+     else if(item.department === "Gastro"){
+      this.allGastroProducts.push(item)
      }
-     else if((item.companyName === "CITIUS" && item.department === "Anti-Diabetic")){
-      this.citiusProductsDiabetic.push(item)
-     }
-     else if((item.companyName === "CITIUS" && item.department === "Cardiac")){
-      this.citiusProductsCardiac.push(item)
-     }
-     else if((item.companyName === "CITIUS" && item.department === "Nutraceuticals")){
-      this.citiusProductsNutra.push(item)
-     }
-     else if((item.companyName === "CITIUS" && item.department === "Others")){
-      this.citiusProductsOthers.push(item)
-     }
-     else {}
-    
+    else{}
    }
-
+   console.log('this.allAntiDiabeticProducts', this.allAntiDiabeticProducts)
+   console.log(this.allCardioProducts)
+   console.log(this.allOtherProducts)
+   console.log(this.allObesityProducts)
+   console.log(this.allGastroProducts)
   }
 
   checkProductActive(){
@@ -166,13 +192,21 @@ export class ProductComponent implements OnInit {
   // New
 
   clickProduct(event: any){
+
+    this.productDose = undefined
+    this.productAlsoAvaliable1 = undefined
+    this.productAlsoAvaliable2 = undefined
+
+    this.productAlsoAvaliable3 = undefined
+    console.log('event', event)
     this.alsoImg1 = true
     this.alsoImg2 = true
     this.alsoImg3 = true
     this.alsoAvaDiv = true
-    window.scroll(0,480);
+    // window.scroll(0,480);
     this.selectedItem = event.target.id
     var target = event.target.id
+    console.log('target', target)
     this.sinsanDiv = false
     this.kaizerDiv = false
     this.citiusDiv = false
@@ -182,6 +216,7 @@ export class ProductComponent implements OnInit {
     //
     this.kaizarListProducts = false
     this.citiusListProducts = false
+    this.subProductsDiv = false;
     
     this.productsObj.find((did: any) => {
       if (did.productName == target) {
@@ -195,14 +230,15 @@ export class ProductComponent implements OnInit {
         this.productAlsoAvaliable1 = did.alsoAvaliable1
         this.productAlsoAvaliable2 = did.alsoAvaliable2
         this.productAlsoAvaliable3 = did.alsoAvaliable3
+        this.subProductsDiv = true;
       }
       else{}
     })
 
-    if(this.productName === "GLIMFIRST M1 M2/Forte"){
-      this.productNameImg = "GLIMFIRST M1 M2Forte"
+    if(this.productName === "GLIMFIRST M1/M2 FORTE TAB"){
+      this.productNameImg = "GLIMFIRST M1M2 FORTE TAB"
     }
-    else if(this.productName === "TELFIRST 20/40/80"){
+    else if(this.productName === "TELFIRST 20/40/80MG TAB"){
       this.productNameImg = "TELFIRST 204080"
     }
     else if(this.productName === "BDID SR/TH"){
@@ -228,6 +264,9 @@ export class ProductComponent implements OnInit {
       this.productNameImg = "OBEZITA 60120 CAP"
     }
 
+    else if(this.productName === "ZICLA 60 SR/60SRM"){
+      this.productNameImg = "ZICLA 60 SR60SRM"
+    }
     else{}
 
     if(this.productAlsoAvaliable1 === undefined){
@@ -269,12 +308,15 @@ else if(this.companyName === 'CITIUS'){
     else{
       // this.mainProductsDiv = true
     }
+    console.log('this.dose', this.productDose)
   }
   backtoproducts(){
     this.sinsanDiv = false
     this.kaizerDiv = false
     this.citiusDiv = false
-    this.mainProductsDiv = true
+    this.subProductsDiv = false;
+    this.mainProductsDiv = true;
+    
     var doc1: any;
     var doc2: any;
     // if(this.activeKaizer){
