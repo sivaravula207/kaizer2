@@ -8469,13 +8469,16 @@ body {
         color: #0A939D; }
   
   .ftco-navbar-light {
-    background: #299adc !important;
+    background-image: url('/assets/images/navbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: #299adc !important; */
     position: relative;
     z-index: 3;
     padding: 0;
     /* overflow: hidden; */
    }
-    .ftco-navbar-light:after {
+    /* .ftco-navbar-light:after {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -8495,7 +8498,7 @@ body {
         top: 0;
         padding: 10px 20px; }
         .ftco-navbar-light:after {
-          opacity: 0; } }
+          opacity: 0; } } */
     .ftco-navbar-light .container {
       width: 1110px;
       margin: 0 auto;
