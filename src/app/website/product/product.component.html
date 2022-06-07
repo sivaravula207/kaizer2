@@ -568,12 +568,12 @@
         <table class="table-bordered" style="width: 100%;">
           <thead>
             <tr style="color: #fff;font-weight: normal; text-align: center">
-              <th style="background-color: #CE8B77;">Gastroenterology</th>
+              <th style="background-color: #00BFFF;">Gastroenterology</th>
             </tr>
           </thead>
           <tbody>
             <tr *ngFor="let item of allGastroProducts"  style="font-size: 15px">
-              <td style="color: #CE8B77;font-weight: bold;" [id]="item.productName" (click)="clickProduct($event)">
+              <td style="color: #00BFFF;font-weight: bold;" [id]="item.productName" (click)="clickProduct($event)">
                 {{item.productName}}
               </td>
             </tr>

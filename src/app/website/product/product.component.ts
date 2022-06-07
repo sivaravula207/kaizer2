@@ -236,7 +236,10 @@ export class ProductComponent implements OnInit {
     })
 
     if(this.productName === "GLIMFIRST M1/M2 FORTE TAB"){
-      this.productNameImg = "GLIMFIRST M1M2 FORTE TAB"
+      this.productNameImg = "Glimfirst_M1"
+    }
+    if(this.productName === "TENLIP M/M Forte"){
+      this.productNameImg = "TENLIP_M_Forte"
     }
     else if(this.productName === "TELFIRST 20/40/80MG TAB"){
       this.productNameImg = "TELFIRST 204080"
@@ -265,8 +268,27 @@ export class ProductComponent implements OnInit {
     }
 
     else if(this.productName === "ZICLA 60 SR/60SRM"){
-      this.productNameImg = "ZICLA 60 SR60SRM"
+      this.productNameImg = "ZICLA_60_SRM"
     }
+    else if(this.productName === "CAMDEM-5/10"){
+      this.productNameImg = "Camdem-510"
+    }
+    else if(this.productName === "ESONTIA/ESONTIA D"){
+      this.productNameImg = "ESONTIA"
+    }
+
+    else if(this.productName === "XIFARIX 400/550"){
+      this.productNameImg = "Xifarix 400550"
+    }
+    
+    else if(this.productName === "TELFIRST M 25/50MG"){
+      this.productNameImg = "TELFIRST M 2550MG"
+    }
+
+    else if(this.productName === "TELFIRST CT 40/6.25 TAB"){
+      this.productNameImg = "TELFIRST CT 406.25 TAB"
+    }
+
     else{}
 
     if(this.productAlsoAvaliable1 === undefined){
